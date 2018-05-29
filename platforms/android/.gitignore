@@ -1,0 +1,19 @@
+# Non-project-specific build files:
+build.xml
+local.properties
+/gradlew
+/gradlew.bat
+/gradle
+# Ant builds
+ant-build
+ant-gen
+# Eclipse builds
+gen
+out
+# Gradle builds
+/build
+
+WatsonChatbotRJOYH-Cordova/platforms/ios/WatsonChatbotRJOYH/BMSCredentials.plist
+WatsonChatbotRJOYH-Cordova/platforms/android/res/values/credentials.xml
+cordova/platforms/ios/WatsonChatbotRJOYH/BMSCredentials.plist
+cordova/platforms/android/res/values/credentials.xml

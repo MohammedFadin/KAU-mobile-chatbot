@@ -1,0 +1,10 @@
+*.mode1v3
+*.perspectivev3
+*.pbxuser
+.DS_Store
+build/
+
+WatsonChatbotRJOYH-Cordova/platforms/ios/WatsonChatbotRJOYH/BMSCredentials.plist
+WatsonChatbotRJOYH-Cordova/platforms/android/res/values/credentials.xml
+cordova/platforms/ios/WatsonChatbotRJOYH/BMSCredentials.plist
+cordova/platforms/android/res/values/credentials.xml

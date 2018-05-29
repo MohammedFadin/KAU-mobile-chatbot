@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <title>Hello Chat!</title>
+    </head>
+    <body>
+        <div class="app">
+            <div id="chatView" style="display:none;">
+               <!-- <div class="chat-container">
+                    <p class="chatText">Hi</p>
+                </div>
+                <div class="watson-container">
+                    <p class="watsonText">Hi. I'm here to help you explore the Bluemix Mobile Services. What would you like to know more about?</p>
+                </div>
+                <div class="chat-container">
+                    <p class="chatText">asdf</p>
+                </div>
+                <div class="chat-container">
+                    <p class="chatText">Hi</p></div>
+                </div>-->
+            </div>
+            <div class="textSubmit">
+	       <input type="text" id="userText" onClick="inputFocus()"/>
+	       <button type="submit" id="send" onClick="sendUserText()">
+                <?xml version="1.0"?>
+               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 58.064 58.064" style="enable-background:new 0 0 58.064 58.064;" xml:space="preserve" width="512px" height="512px" class=""><g><polygon style="fill:#5596e6" points="17.064,31.032 58.064,10.032 24.064,35.032 44.064,48.032 58.064,10.032 0,22.032 " data-original="#5596e6" class="" data-old_color="#5596e6"></polygon><polygon style="fill:#3d70b2" points="24.064,35.032 20.127,48.032 17.064,31.032 58.064,10.032 " data-original="#556080" class="active-path" data-old_color="#3d70b2"></polygon><polygon style="fill:#3d70b2" points="24.064,35.032 20.064,48.032 31.912,40.133 " data-original="#464F66" class="" data-old_color="#464F66"></polygon></g> </svg>
+            </button>
+            </div>
+            <!--<div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>
+            </div> -->
+     
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
